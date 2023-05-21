@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    font-size: 25px;
+    /* box-sizing: unset; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: beige;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logo {
+    width: 100px;
+    padding-left: 5%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8ac4c9;
+    align-items: center;
+    padding: 2%;
+    border-bottom: 1px solid black;
+}
+
+.hd {
+    display: flex;
+}
+
+.hd li {
+    margin: 10px;
+}
+
+.hd a:hover {
+    color: #1081c8;
+    transition-duration: 0.5s;
+}
+
+main {
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.form-box:focus {
+    background-color:#b5dfe2;
+    transition-duration: 0.5s;
+}
+
+.todo {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.task p {
+    flex: 14;
+}
+
+.task p::selection {
+    color:#39b4bc;
+    background-color: black;
+}
+
+.done-btn {
+    flex: 1px;
+    border: none;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+}
+
+.pushed-tick {
+    background-color: grey;
+}
+
+.delete-btn {
+    flex: 1px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    margin-left: 5px;
+}
+
+.done-task {
+    text-decoration: line-through;
+}
